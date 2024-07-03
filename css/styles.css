@@ -14,19 +14,54 @@ ul,
 ol,
 li {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
   text-decoration: none;
 }
+/* //////// */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .title {
   font-size: 20px;
   font-weight: 500;
 }
 
-.sectionHeading {
+.sectionTitle {
   font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.descriptionContainer {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* //////// */
 
@@ -39,44 +74,65 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-right: 76px;
+}
 
+.accent {
   color: #4d5ae5;
 }
 /* //////// */
 
 /* headrer */
+.mainNav {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+}
+
+nav li {
+  padding-right: 40px;
+}
 .navLink {
   font-weight: 500;
   font-style: normal;
   color: #2e2f42;
 }
 
-.contacts {
+.contactNav {
+  display: flex;
   color: #434455;
 }
+
+.contactNav li:first-child {
+  padding-right: 40px;
+}
+
 /* //////// */
 
 /* hero section  */
 .hero {
   background-color: #2e2f42;
   color: #ffffff;
-
+  text-align: center;
   height: 600px;
+  align-content: center;
 }
 
 .hero-title {
   font-size: 56px;
-  text-align: center;
-  line-height: 3.75;
+  line-height: 1.1;
+  margin-bottom: 48px;
 }
 
 button {
   font-weight: 500;
-  letter-spacing: 4%;
-
   color: currentColor;
   background-color: #4d5ae5;
-
   cursor: pointer;
 }
 
@@ -85,12 +141,32 @@ button:hover {
 }
 /* //////// */
 
+/* features */
+.featuresContainer {
+  display: flex;
+  gap: 24px;
+}
+
+.featuresContainer li {
+  flex-basis: calc((100% - 74px) / 3);
+}
+
 /* team section */
 .teamSection {
   background-color: #f4f4fd;
 }
 
+.teamSection .descriptionContainer {
+  text-align: center;
+}
+
+.teamContainer {
+  display: flex;
+  gap: 24px;
+}
+
 .teamCard {
+  flex-basis: calc((100% - 74px) / 3);
   background-color: #ffffff;
 }
 
@@ -105,11 +181,32 @@ button:hover {
   color: #434455;
   background-color: #e7e9fc;
 }
+
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolioContainer li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.portfolioContainer .descriptionContainer {
+  padding-left: 16px;
+}
+
 /* //////// */
 
 /* footer */
 footer {
   background-color: #2e2f42;
   color: #f4f4fd;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer p {
+  padding-top: 16px;
+  width: 264px;
 }
 /* //////// */

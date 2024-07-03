@@ -3,15 +3,60 @@ body {
   color: #2e2f42;
   background-color: #ffffff;
 
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: ;
+  letter-spacing: 0.02em;
 }
+
 ul,
-ol {
+ol,
+li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sectionHeading {
+  font-size: 36px;
+}
+/* //////// */
+
+/* logo */
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #4d5ae5;
+}
+/* //////// */
+
+/* headrer */
+.navLink {
+  font-weight: 500;
+  font-style: normal;
+  color: #2e2f42;
+}
+
+.contacts {
+  color: #434455;
+}
+/* //////// */
+
+/* hero section  */
 .hero {
   background-color: #2e2f42;
   color: #ffffff;
@@ -28,10 +73,43 @@ ol {
 button {
   font-weight: 500;
   letter-spacing: 4%;
+
   color: currentColor;
   background-color: #4d5ae5;
+
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #404bbf;
 }
+/* //////// */
+
+/* team section */
+.teamSection {
+  background-color: #f4f4fd;
+}
+
+.teamCard {
+  background-color: #ffffff;
+}
+
+.teamDescription {
+  color: #434455;
+}
+/* //////// */
+
+/* portfolio section */
+
+.portfolioCard {
+  color: #434455;
+  background-color: #e7e9fc;
+}
+/* //////// */
+
+/* footer */
+footer {
+  background-color: #2e2f42;
+  color: #f4f4fd;
+}
+/* //////// */

@@ -425,9 +425,14 @@
           </ul>
         </section>
         <section>
-          <label class="subsribe"> Subsribe </label>
-          <div class="box">
-            <input placeholder="E-mail" />
+          <label class="subsribe" name="emailSubsciption" for="emailSubsciption"> Subsribe </label>
+          <div class="subsciptionSection">
+            <input
+              placeholder="E-mail"
+              id="emailSubsciption"
+              type="email"
+              class="emailSubsciption"
+            />
 
             <button type="submit" class="secondary">
               Subsribe
@@ -439,5 +444,19 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <form class="form">
+          <label>
+            Name
+            <svg height="24" width="24" class="sendIcon">
+              <use href="./symbol-defs.svg#icon-person"></use>
+            </svg>
+            <input />
+          </label>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

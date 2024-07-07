@@ -371,7 +371,29 @@ footer .socialLink:focus {
   margin-right: 16px;
 }
 
-.box {
+.subsciptionSection {
   display: flex;
+  gap: 24px;
+}
+
+.emailSubsciption {
+  background-color: inherit;
+  border-radius: 4px;
+  padding: 16px 8px;
+  border: 1px solid #ffffff;
+}
+
+.emailSubsciption:hover,
+.emailSubsciption:focus-within {
+  border-color: #4d5ae5;
+}
+/* //////// */
+
+/* form */
+.modal-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 /* //////// */

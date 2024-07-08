@@ -448,13 +448,32 @@
     <div class="modal-overlay">
       <div class="modal">
         <form class="form">
-          <label>
+          <p class="formTitle">Leave your contacts and we will call you back</p>
+          <label for="name" class="formLabel">
             Name
-            <svg height="24" width="24" class="sendIcon">
-              <use href="./symbol-defs.svg#icon-person"></use>
+            <input type="text" name="name" id="name" class="formInput" />
+            <svg height="24" width="24" class="modalIcon">
+              <use href="./images/icon.svg#icon-person"></use>
             </svg>
-            <input />
           </label>
+          <label for="phone" class="formLabel">
+            Phone
+            <input id="phone" name="phone" type="tel" class="formInput" />
+            <svg height="24" width="24" class="modalIcon">
+              <use href="./symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label for="email" class="formLabel">
+            Email
+            <input id="email" name="email" type="email" class="formInput" />
+            <svg height="24" width="24" class="modalIcon">
+              <use href="./symbol-defs.svg#icon-email-"></use>
+            </svg>
+          </label>
+          <label>
+            <textarea placeholder="Text input" name="comment" class="formComment"></textarea>
+          </label>
+          <button type="button" class="modalBtn">Send</button>
         </form>
       </div>
     </div>

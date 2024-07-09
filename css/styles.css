@@ -273,6 +273,10 @@ button.secondary:focus {
   background-color: #4d5ae5;
 }
 
+.socialLinkIcon {
+  fill: #f4f4fd;
+}
+
 .socialLink:hover,
 .socialLink:focus {
   background-color: #404bbf;

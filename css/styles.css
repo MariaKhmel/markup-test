@@ -108,7 +108,7 @@ header .logo {
 
 /* headrer */
 .mainNav {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -116,7 +116,7 @@ header .logo {
 }
 
 nav {
-  /* display: flex; */
+  display: flex;
   position: relative;
 }
 
@@ -172,24 +172,44 @@ nav li {
 /* hero section  */
 .hero {
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  padding: 72px 52px;
+  width: 100%;
+  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/people-office\ 1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-   max-width: 1440px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-position: center;
+  max-width: 1440px; 
+  height: 600px; */
+  /* margin-left: auto;
+  margin-right: auto; */
   color: #ffffff;
   text-align: center;
   align-content: center;
-} 
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+  }
+}
 
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
+  /* font-size: 56px; */
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1158px) {
 }
 
 /* button */
